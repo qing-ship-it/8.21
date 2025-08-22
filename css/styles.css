@@ -1,0 +1,146 @@
+/* styles.css */
+
+/* Theme Colors */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #1e40af;
+  --background-color: #111827;
+  --text-color: #f9fafb;
+  --card-bg-color: #1f2937;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: var(--card-bg-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Main Content */
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.bg-gray-800 {
+  background-color: var(--card-bg-color);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+/* Footer */
+footer {
+  background-color: var(--card-bg-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
